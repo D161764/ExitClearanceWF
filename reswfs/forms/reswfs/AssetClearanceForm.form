@@ -1,0 +1,31 @@
+{
+    "id": "assetclearanceform",
+    "name": "AssetClearanceForm",
+    "revision": "1.0",
+    "type": "task",
+    "readOnly": false,
+    "content": [
+        {
+            "id": "asset_clearance_for",
+            "type": "string",
+            "label": "Asset Clearance for",
+            "readOnly": false,
+            "value": "${context.name}",
+            "constraints": {
+                "required": false
+            }
+        }
+    ],
+    "decisions": [
+        {
+            "id": "approve",
+            "text": "Approve",
+            "decisionType": "positive"
+        },
+        {
+            "id": "reject",
+            "text": "Reject",
+            "decisionType": "negative"
+        }
+    ]
+}

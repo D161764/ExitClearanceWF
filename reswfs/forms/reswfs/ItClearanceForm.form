@@ -1,0 +1,31 @@
+{
+    "id": "itclearanceform",
+    "name": "ItClearanceForm",
+    "revision": "1.0",
+    "type": "task",
+    "readOnly": false,
+    "content": [
+        {
+            "id": "approve_it_clearance",
+            "type": "string",
+            "label": "IT Clearance for",
+            "readOnly": false,
+            "value": "${context.name}",
+            "constraints": {
+                "required": false
+            }
+        }
+    ],
+    "decisions": [
+        {
+            "id": "approve",
+            "text": "Approve",
+            "decisionType": "positive"
+        },
+        {
+            "id": "reject",
+            "text": "Reject",
+            "decisionType": "negative"
+        }
+    ]
+}

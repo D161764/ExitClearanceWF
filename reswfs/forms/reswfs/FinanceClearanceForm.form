@@ -1,0 +1,31 @@
+{
+    "id": "financeclearanceform",
+    "name": "FinanceClearanceForm",
+    "revision": "1.0",
+    "type": "task",
+    "readOnly": false,
+    "content": [
+        {
+            "id": "finance_clearance_for",
+            "type": "string",
+            "label": "Finance Clearance For",
+            "readOnly": false,
+            "value": "${context.name}",
+            "constraints": {
+                "required": false
+            }
+        }
+    ],
+    "decisions": [
+        {
+            "id": "approve",
+            "text": "Approve",
+            "decisionType": "positive"
+        },
+        {
+            "id": "reject",
+            "text": "Reject",
+            "decisionType": "negative"
+        }
+    ]
+}

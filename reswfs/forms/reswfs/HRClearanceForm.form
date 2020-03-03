@@ -1,0 +1,31 @@
+{
+    "id": "hrclearanceform",
+    "name": "HRClearanceForm",
+    "revision": "1.0",
+    "type": "task",
+    "readOnly": false,
+    "content": [
+        {
+            "id": "hr_clearance_for",
+            "type": "string",
+            "label": "HR Clearance For",
+            "readOnly": false,
+            "value": "${context.name}",
+            "constraints": {
+                "required": false
+            }
+        }
+    ],
+    "decisions": [
+        {
+            "id": "approve",
+            "text": "Approve",
+            "decisionType": "positive"
+        },
+        {
+            "id": "reject",
+            "text": "Reject",
+            "decisionType": "negative"
+        }
+    ]
+}
